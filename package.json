@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/FES-Aragon-CSocial/fes_websites_theme/issues"
   },
-  "homepage": "https://github.com/FES-Aragon-CSocial/fes_websites_theme#readme",
+  "homepage": "https://fes-aragon-csocial.github.io/fes_websites_theme/",
   "dependencies": {
     "bootstrap": "^5.1.3"
   }
