@@ -2,6 +2,9 @@
 
 Tema oficial de los sitios de la FES Aragón.
 
+## Documentation to use it
+[Visitar documentación](https://fes-aragon-csocial.github.io/fes_websites_theme/)
+
 ## Project setup
 ```
 npm install
