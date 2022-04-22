@@ -1,6 +1,6 @@
 {
-  "name": "fes_websites_theme",
-  "version": "1.0.0",
+  "name": "fes-aragon-websites-theme",
+  "version": "0.1.0",
   "description": "Tema oficial de los sitios de la FES Aragón.",
   "main": "src/index.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "fes",
     "aragón"
   ],
-  "author": "Comunicación Social FES Aragón | DarkHawk21",
+  "author": "Comunicación Social FES Aragón | DarkHawk21 (Enrique Carranza)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/FES-Aragon-CSocial/fes_websites_theme/issues"
