@@ -1,10 +1,21 @@
 @charset 'UTF-8';
 
-// 1. Base
+// 1. Bootstrap functions
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Base
 @import "./base/config";
 
-// 2. Layouts
+// 3. Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// 4. Layouts
 @import "./layouts/layouts";
 
-// 3. Modules
+// 5. Modules
 @import "./modules/modules";
+
+// 6. Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";

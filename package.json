@@ -1,0 +1,30 @@
+{
+  "name": "fes_websites_theme",
+  "version": "1.0.0",
+  "description": "Tema oficial de los sitios de la FES Aragón.",
+  "main": "src/index.js",
+  "scripts": {
+    "compile": "sass src/app.scss:public/css/fes_theme.css",
+    "dev": "sass --watch src/app.scss:public/css/fes_theme.css",
+    "dev-compress": "sass --watch src/app.scss:public/css/fes_theme.css --style compressed",
+    "build": "sass src/app.scss:dist/fes_theme.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FES-Aragon-CSocial/fes_websites_theme.git"
+  },
+  "keywords": [
+    "tema",
+    "fes",
+    "aragón"
+  ],
+  "author": "Comunicación Social FES Aragón | DarkHawk21",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FES-Aragon-CSocial/fes_websites_theme/issues"
+  },
+  "homepage": "https://github.com/FES-Aragon-CSocial/fes_websites_theme#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
