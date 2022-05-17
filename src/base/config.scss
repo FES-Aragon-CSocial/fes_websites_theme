@@ -11,5 +11,13 @@ $gray-dark: #333333;
 $blue: #253652;
 $link: #007bff;
 
+// Principal menu css rules
+$principal-menu-color: #212529 !default;
+$principal-menu-font-size: 12px !default;
+$principal-menu-weight: 400 !default;
+$principal-menu-style: normal !default;
+$principal-menu-line-height: 16px !default;
+$principal-menu-font-family: "Josefin Sans", sans-serif !default;
+
 // Override bootstrap colors
 $primary: $red;

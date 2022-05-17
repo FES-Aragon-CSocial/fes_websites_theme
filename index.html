@@ -8,60 +8,108 @@
   <link rel="stylesheet" href="./public/css/fes_theme.css" />
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="https://www.aragon.unam.mx/fes-aragon/#!/inicio" target="_blank">FES Aragón</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3 flex-shrink-0 p-3 bg-white">
+        <a href="https://www.aragon.unam.mx/fes-aragon/#!/inicio" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+          <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-5 fw-semibold">FES Aragón</span>
+        </a>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        <ul class="list-unstyled ps-0">
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+              Inicio
+            </button>
+          
+            <div class="collapse" id="home-collapse" style="">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-dark rounded">Overview</a></li>
+                <li><a href="#" class="link-dark rounded">Updates</a></li>
+                <li><a href="#" class="link-dark rounded">Reports</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+              Instalación
+            </button>
+          
+            <div class="collapse" id="dashboard-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-dark rounded">Overview</a></li>
+                <li><a href="#" class="link-dark rounded">Weekly</a></li>
+                <li><a href="#" class="link-dark rounded">Monthly</a></li>
+                <li><a href="#" class="link-dark rounded">Annually</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+              Componentes
+            </button>
+          
+            <div class="collapse" id="dashboard-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-dark rounded">Overview</a></li>
+                <li><a href="#" class="link-dark rounded">Weekly</a></li>
+                <li><a href="#" class="link-dark rounded">Monthly</a></li>
+                <li><a href="#" class="link-dark rounded">Annually</a></li>
+              </ul>
+            </div>
           </li>
         </ul>
-
-        <form class="d-flex">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Buscar"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
       </div>
-    </div>
-  </nav>
 
-  <div class="container">
-    <h1 class="title text-center mt-5">Tema FES Aragón</h1>
-    <h4>Instalación</h4>
+      <div class="col-9">
+        <header class="header">
+          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                </ul>
+        
+                <form class="d-flex">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Buscar"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </header>
 
-    <div class="container p-2">
-      <h6><b>Descarga de archivos</b></h6>
+        <div class="container">
+          <h1 class="title text-center mt-5">Tema FES Aragón</h1>
+          <h4>Instalación</h4>
       
-      <ol class="p-2">
-        1. Ir a <a href="https://github.com/FES-Aragon-CSocial/fes_websites_theme" target="_blank" class="text-success">descargar archivos de github</a>.<br>
-      </ol>
-    </div>
-    
-    <div class="container p-2">
-      <h6><b>NPM</b></h6>
-
-      <ol class="p-2">
-        1. <code class="text-dark">npm i fes-aragon-websites-theme</code><br>
-        2. <code class="text-dark">import '../node_modules/fes-aragon-websites-theme/dist/fes_theme.css';</code>
-      </ol>
+          <div class="container p-2">
+            <h6><b>Descarga de archivos</b></h6>
+            
+            <ol class="p-2">
+              1. Ir a <a href="https://github.com/FES-Aragon-CSocial/fes_websites_theme" target="_blank" class="text-primary">descargar archivos de github</a>.<br>
+            </ol>
+          </div>
+          
+          <div class="container p-2">
+            <h6><b>NPM</b></h6>
+      
+            <ol class="p-2">
+              1. <code class="text-dark">npm i fes-aragon-websites-theme</code><br>
+              2. <code class="text-dark">import '../node_modules/fes-aragon-websites-theme/dist/fes_theme.css';</code>
+            </ol>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
