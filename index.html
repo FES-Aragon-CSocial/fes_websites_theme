@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FES Websites Theme</title>
   <link rel="stylesheet" href="./public/css/fes_theme.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-3 flex-shrink-0 p-3 bg-white">
+      <div class="col-3 flex-shrink-0 p-3 bg-white" style="border-right: 1px solid rgba(0,0,0,0.1);">
         <a href="https://www.aragon.unam.mx/fes-aragon/#!/inicio" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
           <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
           <span class="fs-5 fw-semibold">FES Aragón</span>
@@ -18,45 +19,33 @@
 
         <ul class="list-unstyled ps-0">
           <li class="mb-1">
-            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
-              Inicio
-            </button>
+            <a class="btn align-items-center" aria-expanded="false">Inicio</a>            
+          </li>
+
+          <li class="mb-1">
+            <a class="btn btn-toggle align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#installation-collapse" aria-expanded="false">
+              Instalación ▼
+            </a>
           
-            <div class="collapse" id="home-collapse" style="">
-              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a href="#" class="link-dark rounded">Overview</a></li>
-                <li><a href="#" class="link-dark rounded">Updates</a></li>
-                <li><a href="#" class="link-dark rounded">Reports</a></li>
+            <div class="collapse" id="installation-collapse">
+              <ul class="btn-toggle-nav fw-normal pb-1 small">
+                <li><a href="#" class="link-dark" style="text-decoration:none;">Descarga de archivos</a></li>
+                <li><a href="#" class="link-dark" style="text-decoration:none;">NPM</a></li>
               </ul>
             </div>
           </li>
 
           <li class="mb-1">
-            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-              Instalación
-            </button>
+            <a class="btn btn-toggle align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false">
+              Componentes ▼
+            </a>
           
-            <div class="collapse" id="dashboard-collapse">
-              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a href="#" class="link-dark rounded">Overview</a></li>
-                <li><a href="#" class="link-dark rounded">Weekly</a></li>
-                <li><a href="#" class="link-dark rounded">Monthly</a></li>
-                <li><a href="#" class="link-dark rounded">Annually</a></li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="mb-1">
-            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-              Componentes
-            </button>
-          
-            <div class="collapse" id="dashboard-collapse">
-              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a href="#" class="link-dark rounded">Overview</a></li>
-                <li><a href="#" class="link-dark rounded">Weekly</a></li>
-                <li><a href="#" class="link-dark rounded">Monthly</a></li>
-                <li><a href="#" class="link-dark rounded">Annually</a></li>
+            <div class="collapse" id="components-collapse">
+              <ul class="btn-toggle-nav fw-normal pb-1 small">
+                <li><a href="#" class="link-dark" style="text-decoration:none;">Card</a></li>
+                <li><a href="#" class="link-dark" style="text-decoration:none;">SecondaryMenu</a></li>
+                <li><a href="#" class="link-dark" style="text-decoration:none;">MenuItem</a></li>
+                <li><a href="#" class="link-dark" style="text-decoration:none;">LeftMenu</a></li>
               </ul>
             </div>
           </li>
